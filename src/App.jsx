@@ -1,12 +1,14 @@
 import "./App.css";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <main className="flex justify-center gap-4 flex-col min-h-screen">
-      <h1 className="text-3xl text-center font-bold underline">React & Tailwind CSS Starter Pack</h1>
-      <p className="text-center text-xl">This is a starter pack for React & Tailwind CSS projects.</p>
-      <img src="https://bit.ly/3wsmzTy" alt="meme" className="mx-auto" />
-    </main>
+    <div className="flex bg-slate-100">
+      <Sidebar/>
+      <div className="p-7">
+        <h1 className="text-2xl p-3">Dashboard</h1>
+      </div>
+    </div>
   );
 }
 
