@@ -4,9 +4,19 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
+
+  const sidebarItems = [
+    { icon: <Monitor />, text: "Dashboard" },
+    { icon: <Clock />, text: "Timeline" },
+    { icon: <Airplane />, text: "Employees" },
+    { icon: <Employees />, text: "Hiring" },
+    { icon: <Mike />, text: "Hiring" },
+  ];
+
   const sideBarTextClasses = `text-gray-600 hover:text-default-skyblue pl-2 ${
     isOpen ? "" : "hidden"
   }`;
+
   const svgIconClasses = `flex text-transparent hover:text-default-skyblue pl-2 cursor-pointer stroke-gray-600 hover:stroke-default-skyblue`;
 
   return (
@@ -35,25 +45,12 @@ const Sidebar = () => {
         </div>
 
         <div className="h-64 flex flex-col justify-between">
-          <div className={svgIconClasses}>
-            <Monitor />
-            <h1 className={sideBarTextClasses}>Dashboard</h1>
-          </div>
-          <div className="flex text-transparent hover:text-default-skyblue pl-2 cursor-pointer stroke-gray-600 hover:stroke-white">
-            <Clock />
-            <h1 className={sideBarTextClasses}>Timeline</h1>
-          </div>
-          <div className={svgIconClasses}>
-            <Airplane /> <h1 className={sideBarTextClasses}>Emplyees</h1>
-          </div>
-          <div className={svgIconClasses}>
-            <Employees />
-            <h1 className={sideBarTextClasses}>Hiring</h1>
-          </div>
-          <div className={svgIconClasses}>
-            <Mike />
-            <h1 className={sideBarTextClasses}>Hiring</h1>
-          </div>
+          {sidebarItems.map((item, index) => (
+            <div key={index} className={svgIconClasses}>
+              {item.icon}
+              <h1 className={sideBarTextClasses}>{item.text}</h1>
+            </div>
+          ))}
         </div>
       </div>
     </div>
@@ -61,3 +58,4 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+

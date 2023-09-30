@@ -1,15 +1,19 @@
-import "./App.css";
+import React from "react";
 import Sidebar from "./components/Sidebar";
+import MainPanel from "./components/mainPanel/Dashboard/Main";
 
-function App() {
+
+const App = () => {
   return (
     <div className="flex bg-slate-100">
-      <Sidebar/>
-      <div className="p-7">
-        <h1 className="text-2xl p-3">Dashboard</h1>
+      <Sidebar />
+
+
+      <div className="w-screen">
+        <MainPanel />
       </div>
     </div>
   );
-}
+};
 
 export default App;
