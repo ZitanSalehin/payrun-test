@@ -17,7 +17,7 @@ const Sidebar = () => {
     isOpen ? "" : "hidden"
   }`;
 
-  const svgIconClasses = `flex text-transparent hover:text-default-skyblue pl-2 cursor-pointer stroke-gray-600 hover:stroke-default-skyblue`;
+  // const svgIconClasses = '';
 
   return (
     <div className="">
@@ -46,7 +46,7 @@ const Sidebar = () => {
 
         <div className="h-64 flex flex-col justify-between">
           {sidebarItems.map((item, index) => (
-            <div key={index} className={svgIconClasses}>
+            <div key={index} className={`flex text-transparent hover:text-default-skyblue pl-2 cursor-pointer stroke-gray-600 ${index===1 ? 'hover:stroke-slate-100':'hover:stroke-default-skyblue'} `}>
               {item.icon}
               <h1 className={sideBarTextClasses}>{item.text}</h1>
             </div>
