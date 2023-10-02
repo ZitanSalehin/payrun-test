@@ -30,8 +30,8 @@ const MainContent = () => {
 
   return (
     <div className="w-full px-6">
-      <div className="grid grid-cols-7 grid-rows-20 gap-8 h-screen">
-        <div className="col-span-7 bg-white rounded-xl shadow-sm">
+      <div className="grid grid-cols-3 grid-rows-8 gap-8 h-screen">
+        <div className="col-span-3 row-span-2 bg-white rounded-xl shadow-sm py-5">
           <div className="flex justify-between items-center px-6 py-4 h-full">
             <div className="flex flex-col">
               <p className="text-2xl font-bold text-blue-700">
@@ -60,16 +60,16 @@ const MainContent = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-3 row-span-3 row-start-2 bg-white shadow-sm rounded-xl">
-          <div className="p-10">
-          <div className="flex flex-col mb-8">
+        <div className="row-span-3 row-start-3 bg-white shadow-sm rounded-xl">
+          <div className="pl-8 pt-10">
+          <div className="flex flex-col mb-16">
               <p className="text-xl font-semibold">Emplyees overview</p>
               <p className="text-gray-400">Today</p>
             </div>
             <EmplyeesOverviewBadge/>
           </div>
           </div>
-        <div className="col-span-4 row-span-2 col-start-4 row-start-2 bg-white shadow-sm rounded-xl">
+        <div className="col-span-2 row-span-2 row-start-3 bg-white shadow-sm rounded-xl">
           <div className="flex flex-col justify-around p-10">
             <div className="flex flex-col">
               <p className="text-xl font-semibold">Monthly timelog</p>
@@ -83,9 +83,9 @@ const MainContent = () => {
             </div>
           </div>
         </div>
-        <div className="col-start-4 col-span-2 row-start-4 bg-white shadow-sm rounded-xl">4</div>
-        <div className="col-start-6 col-span-2 row-start-4 bg-white shadow-sm rounded-xl">5</div>
-        <div className="col-span-7 row-span-4 row-start-5 bg-white shadow-sm rounded-xl p-10">
+        <div className="col-start-2 row-start-5 bg-white shadow-sm rounded-xl">4 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus minus eligendi hic eum non quasi, quae nesciunt enim eaque, animi culpa unde modi dolorum iure provident deserunt, perspiciatis labore? Ad.</div>
+        <div className="col-start-3 row-start-5 bg-white shadow-sm rounded-xl">5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae maxime, iure earum consectetur, a error ratione esse hic magni tempore eius culpa id qui soluta aperiam asperiores suscipit sunt quis.</div>
+        <div className="col-span-3 row-span-3 row-start-6 bg-white shadow-sm rounded-xl p-10">
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vel aperiam rerum labore velit unde harum expedita aliquam itaque. Enim quasi quisquam suscipit pariatur reiciendis aut optio aliquid, natus et!
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vel aperiam rerum labore velit unde harum expedita aliquam itaque. Enim quasi quisquam suscipit pariatur reiciendis aut optio aliquid, natus et!
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vel aperiam rerum labore velit unde harum expedita aliquam itaque. Enim quasi quisquam suscipit pariatur reiciendis aut optio aliquid, natus et!
